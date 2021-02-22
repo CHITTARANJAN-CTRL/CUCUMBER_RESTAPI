@@ -1,0 +1,68 @@
+package payloads;
+
+public class IdnT_CreateNotificationPayload {
+	
+	public static String createRequestNotificationV1(String dcn, String eventtype) {
+		return "{\r\n" + 
+				"    \"ccpEvent\": \""+eventtype+"\",\r\n" + 
+				"    \"country\": \"US\",\r\n" + 
+				"    \"language\": \"EN\",\r\n" + 
+				"    \"dcn\": \""+dcn+"\",\r\n" + 
+				"    \"payload\": \"{\\\"requesterName\\\":\\\"Vamsee Requester Notification(v1)\\\",\\r\\n\\\"viewOrderLink\\\":\\\"https:\\/\\/dellcloud.vslabs.cloud\\/#\\/subscriptions\\/details\\/add-capacity\\/site-details\\/review-order\\/**DUMMY_V1_NOTIFICATION**\\\",\\\"approverName\\\":\\\"Vamsee Approver Notification(v1)\\\",\\\"requisitionNumber\\\":\\\"4444\\\",\\\"createdDate\\\":\\\"2021-01-01T12:00:01.595Z\\\",\\\"approvedDate\\\":\\\"2021-01-01T12:00:01.595Z\\\",\\\"rejectedDate\\\":\\\"2021-01-01T12:00:01.595Z\\\",\\\"status\\\":\\\"PendingApproval\\\",\\\"totalContractValue\\\":\\\"432000.0\\\",\\\"subscriptionTerm\\\":\\\"36\\\",\\\"billingCadence\\\":\\\"Monthly\\\",\\\"paymentMethod\\\":null,\\\"comments\\\":\\\"Your **DUMMY_V1_NOTIFICATION** Comment\\\",\\\"orderType\\\":\\\"Pos\\\",\\\"currencyCode\\\":\\\"USD\\\",\\\"solution\\\":{\\\"solutionName\\\":\\\"ICB PoS Order - **DUMMY_V1_NOTIFICATION**\\\",\\\"products\\\":[{\\\"skuNum\\\":\\\"119-BBFW\\\",\\\"id\\\":null,\\\"description\\\":\\\"DTCP M-100 All Flash-E1 NO NCLSTR VCF-ENT Sub 3 Year, 36 Months\\\",\\\"quantity\\\":2,\\\"price\\\":{\\\"listPrice\\\":1000.0,\\\"yourPrice\\\":1000.0,\\\"totalPrice\\\":2000.0}},{\\\"skuNum\\\":\\\"119-BCLR\\\",\\\"id\\\":null,\\\"description\\\":\\\"DTCP VM-100 All Flash-E1 NO NCLSTR VCF-ENT Sub 3 Year, 36 Months\\\",\\\"quantity\\\":2,\\\"price\\\":{\\\"listPrice\\\":2000.0,\\\"yourPrice\\\":2000.0,\\\"totalPrice\\\":4000.0}},{\\\"skuNum\\\":\\\"119-BBSX\\\",\\\"id\\\":null,\\\"description\\\":\\\"DTCP C-100 All Flash-E1 NO NCLSTR VCF-ENT Sub 3 Year, 36 Months\\\",\\\"quantity\\\":2,\\\"price\\\":{\\\"listPrice\\\":3000.0,\\\"yourPrice\\\":3000.0,\\\"totalPrice\\\":6000.0}}],\\\"committedMonthlyTotal\\\":{\\\"monthlySubTotal\\\":12000.0},\\\"committedContractValue\\\":{\\\"contractSubTotal\\\":432000.0,\\\"contractTax\\\":68000.0,\\\"contractTotal\\\":500000.0}}}\",\r\n" + 
+				"    \"shortDescription\": \"Your order 12345 is Pending for Approval\",\r\n" + 
+				"    \"alertActionLink\": \"https://ccp.dell.com\"\r\n" + 
+				"}";
+	}
+	
+	public static String createApproveNotificationV1(String dcn, String eventtype) {
+		return "{\r\n" + 
+				"    \"ccpEvent\": \""+eventtype+"\",\r\n" + 
+				"    \"country\": \"US\",\r\n" + 
+				"    \"language\": \"EN\",\r\n" + 
+				"    \"dcn\": \""+dcn+"\",\r\n" + 
+				"    \"payload\": \"{\\\"requesterName\\\":\\\"Vamsee Requester Notification(v1)\\\",\\r\\n\\\"viewOrderLink\\\":\\\"https:\\/\\/dellcloud.vslabs.cloud\\/#\\/subscriptions\\/details\\/add-capacity\\/site-details\\/review-order\\/**DUMMY_V1_NOTIFICATION**\\\",\\\"approverName\\\":\\\"Vamsee Approver Notification(v1)\\\",\\\"requisitionNumber\\\":\\\"4444\\\",\\\"createdDate\\\":\\\"2021-01-01T12:00:01.595Z\\\",\\\"approvedDate\\\":\\\"2021-01-01T12:00:01.595Z\\\",\\\"rejectedDate\\\":\\\"2021-01-01T12:00:01.595Z\\\",\\\"status\\\":\\\"PendingApproval\\\",\\\"totalContractValue\\\":\\\"432000.0\\\",\\\"subscriptionTerm\\\":\\\"36\\\",\\\"billingCadence\\\":\\\"Monthly\\\",\\\"paymentMethod\\\":null,\\\"comments\\\":\\\"Your **DUMMY_V1_NOTIFICATION** Comment\\\",\\\"orderType\\\":\\\"Pos\\\",\\\"currencyCode\\\":\\\"USD\\\",\\\"solution\\\":{\\\"solutionName\\\":\\\"ICB PoS Order - **DUMMY_V1_NOTIFICATION**\\\",\\\"products\\\":[{\\\"skuNum\\\":\\\"119-BBFW\\\",\\\"id\\\":null,\\\"description\\\":\\\"DTCP M-100 All Flash-E1 NO NCLSTR VCF-ENT Sub 3 Year, 36 Months\\\",\\\"quantity\\\":2,\\\"price\\\":{\\\"listPrice\\\":1000.0,\\\"yourPrice\\\":1000.0,\\\"totalPrice\\\":2000.0}},{\\\"skuNum\\\":\\\"119-BCLR\\\",\\\"id\\\":null,\\\"description\\\":\\\"DTCP VM-100 All Flash-E1 NO NCLSTR VCF-ENT Sub 3 Year, 36 Months\\\",\\\"quantity\\\":2,\\\"price\\\":{\\\"listPrice\\\":2000.0,\\\"yourPrice\\\":2000.0,\\\"totalPrice\\\":4000.0}},{\\\"skuNum\\\":\\\"119-BBSX\\\",\\\"id\\\":null,\\\"description\\\":\\\"DTCP C-100 All Flash-E1 NO NCLSTR VCF-ENT Sub 3 Year, 36 Months\\\",\\\"quantity\\\":2,\\\"price\\\":{\\\"listPrice\\\":3000.0,\\\"yourPrice\\\":3000.0,\\\"totalPrice\\\":6000.0}}],\\\"committedMonthlyTotal\\\":{\\\"monthlySubTotal\\\":12000.0},\\\"committedContractValue\\\":{\\\"contractSubTotal\\\":432000.0,\\\"contractTax\\\":68000.0,\\\"contractTotal\\\":500000.0}}}\",\r\n" + 
+				"    \"shortDescription\": \"Your order 12345 is Approved\",\r\n" + 
+				"    \"alertActionLink\": \"https://ccp.dell.com\"\r\n" + 
+				"}";
+	}
+	
+	public static String createRejectNotificationV1(String dcn, String eventtype) {
+		return "{\r\n" + 
+				"    \"ccpEvent\": \""+eventtype+"\",\r\n" + 
+				"    \"country\": \"US\",\r\n" + 
+				"    \"language\": \"EN\",\r\n" + 
+				"    \"dcn\": \""+dcn+"\",\r\n" + 
+				"    \"payload\": \"{\\\"requesterName\\\":\\\"Vamsee Requester Notification(v1)\\\",\\r\\n\\\"viewOrderLink\\\":\\\"https:\\/\\/dellcloud.vslabs.cloud\\/#\\/subscriptions\\/details\\/add-capacity\\/site-details\\/review-order\\/**DUMMY_V1_NOTIFICATION**\\\",\\\"approverName\\\":\\\"Vamsee Approver Notification(v1)\\\",\\\"requisitionNumber\\\":\\\"4444\\\",\\\"createdDate\\\":\\\"2021-01-01T12:00:01.595Z\\\",\\\"approvedDate\\\":\\\"2021-01-01T12:00:01.595Z\\\",\\\"rejectedDate\\\":\\\"2021-01-01T12:00:01.595Z\\\",\\\"status\\\":\\\"PendingApproval\\\",\\\"totalContractValue\\\":\\\"432000.0\\\",\\\"subscriptionTerm\\\":\\\"36\\\",\\\"billingCadence\\\":\\\"Monthly\\\",\\\"paymentMethod\\\":null,\\\"comments\\\":\\\"Your **DUMMY_V1_NOTIFICATION** Comment\\\",\\\"orderType\\\":\\\"Pos\\\",\\\"currencyCode\\\":\\\"USD\\\",\\\"solution\\\":{\\\"solutionName\\\":\\\"ICB PoS Order - **DUMMY_V1_NOTIFICATION**\\\",\\\"products\\\":[{\\\"skuNum\\\":\\\"119-BBFW\\\",\\\"id\\\":null,\\\"description\\\":\\\"DTCP M-100 All Flash-E1 NO NCLSTR VCF-ENT Sub 3 Year, 36 Months\\\",\\\"quantity\\\":2,\\\"price\\\":{\\\"listPrice\\\":1000.0,\\\"yourPrice\\\":1000.0,\\\"totalPrice\\\":2000.0}},{\\\"skuNum\\\":\\\"119-BCLR\\\",\\\"id\\\":null,\\\"description\\\":\\\"DTCP VM-100 All Flash-E1 NO NCLSTR VCF-ENT Sub 3 Year, 36 Months\\\",\\\"quantity\\\":2,\\\"price\\\":{\\\"listPrice\\\":2000.0,\\\"yourPrice\\\":2000.0,\\\"totalPrice\\\":4000.0}},{\\\"skuNum\\\":\\\"119-BBSX\\\",\\\"id\\\":null,\\\"description\\\":\\\"DTCP C-100 All Flash-E1 NO NCLSTR VCF-ENT Sub 3 Year, 36 Months\\\",\\\"quantity\\\":2,\\\"price\\\":{\\\"listPrice\\\":3000.0,\\\"yourPrice\\\":3000.0,\\\"totalPrice\\\":6000.0}}],\\\"committedMonthlyTotal\\\":{\\\"monthlySubTotal\\\":12000.0},\\\"committedContractValue\\\":{\\\"contractSubTotal\\\":432000.0,\\\"contractTax\\\":68000.0,\\\"contractTotal\\\":500000.0}}}\",\r\n" + 
+				"    \"shortDescription\": \"Your order 12345 is Rejected\",\r\n" + 
+				"    \"alertActionLink\": \"https://ccp.dell.com\"\r\n" + 
+				"}";
+	}
+	
+	public static String createRequestNotificationV2(String eventtype) {
+		return "{\r\n" + 
+				"    \"ccpEvent\": \""+eventtype+"\",\r\n" + 
+				"    \"payload\": \"{\\\"requesterName\\\":\\\"Vamsee Requester Notification(v2)\\\",\\r\\n\\\"viewOrderLink\\\":\\\"https:\\/\\/dellcloud.vslabs.cloud\\/#\\/subscriptions\\/details\\/add-capacity\\/site-details\\/review-order\\/**DUMMY_V2_NOTIFICATION**\\\",\\\"approverName\\\":\\\"Vamsee Approver Notification(v2)\\\",\\\"requisitionNumber\\\":\\\"4444\\\",\\\"createdDate\\\":\\\"2021-01-01T12:00:01.595Z\\\",\\\"approvedDate\\\":\\\"2021-01-01T12:00:01.595Z\\\",\\\"rejectedDate\\\":\\\"2021-01-01T12:00:01.595Z\\\",\\\"status\\\":\\\"PendingApproval\\\",\\\"totalContractValue\\\":\\\"432000.0\\\",\\\"subscriptionTerm\\\":\\\"36\\\",\\\"billingCadence\\\":\\\"Monthly\\\",\\\"paymentMethod\\\":null,\\\"comments\\\":\\\"Your **DUMMY_V2_NOTIFICATION** Comment\\\",\\\"orderType\\\":\\\"Pos\\\",\\\"currencyCode\\\":\\\"EUR\\\",\\\"solution\\\":{\\\"solutionName\\\":\\\"ICB PoS Order - **DUMMY_V2_NOTIFICATION**\\\",\\\"products\\\":[{\\\"skuNum\\\":\\\"119-BBFW\\\",\\\"id\\\":null,\\\"description\\\":\\\"DTCP M-100 All Flash-E1 NO NCLSTR VCF-ENT Sub 3 Year, 36 Months\\\",\\\"quantity\\\":2,\\\"price\\\":{\\\"listPrice\\\":1000.0,\\\"yourPrice\\\":1000.0,\\\"totalPrice\\\":2000.0}},{\\\"skuNum\\\":\\\"119-BCLR\\\",\\\"id\\\":null,\\\"description\\\":\\\"DTCP VM-100 All Flash-E1 NO NCLSTR VCF-ENT Sub 3 Year, 36 Months\\\",\\\"quantity\\\":2,\\\"price\\\":{\\\"listPrice\\\":2000.0,\\\"yourPrice\\\":2000.0,\\\"totalPrice\\\":4000.0}},{\\\"skuNum\\\":\\\"119-BBSX\\\",\\\"id\\\":null,\\\"description\\\":\\\"DTCP C-100 All Flash-E1 NO NCLSTR VCF-ENT Sub 3 Year, 36 Months\\\",\\\"quantity\\\":2,\\\"price\\\":{\\\"listPrice\\\":3000.0,\\\"yourPrice\\\":3000.0,\\\"totalPrice\\\":6000.0}}],\\\"committedMonthlyTotal\\\":{\\\"monthlySubTotal\\\":12000.0},\\\"committedContractValue\\\":{\\\"contractSubTotal\\\":432000.0,\\\"contractTax\\\":68000.0,\\\"contractTotal\\\":500000.0}}}\",\r\n" + 
+				"    \"shortDescription\": \"purchase_request, 123456789\",\r\n" + 
+				"    \"alertActionLink\": \"https://ccp.dell.com\"\r\n" + 
+				"}";
+	}
+	
+	public static String createApproveNotificationV2(String eventtype) {
+		return "{\r\n" + 
+				"    \"ccpEvent\": \""+eventtype+"\",\r\n" + 
+				"    \"payload\": \"{\\\"requesterName\\\":\\\"Vamsee Requester Notification(v2)\\\",\\r\\n\\\"viewOrderLink\\\":\\\"https:\\/\\/dellcloud.vslabs.cloud\\/#\\/subscriptions\\/details\\/add-capacity\\/site-details\\/review-order\\/**DUMMY_V2_NOTIFICATION**\\\",\\\"approverName\\\":\\\"Vamsee Approver Notification(v2)\\\",\\\"requisitionNumber\\\":\\\"4444\\\",\\\"createdDate\\\":\\\"2021-01-01T12:00:01.595Z\\\",\\\"approvedDate\\\":\\\"2021-01-01T12:00:01.595Z\\\",\\\"rejectedDate\\\":\\\"2021-01-01T12:00:01.595Z\\\",\\\"status\\\":\\\"PendingApproval\\\",\\\"totalContractValue\\\":\\\"432000.0\\\",\\\"subscriptionTerm\\\":\\\"36\\\",\\\"billingCadence\\\":\\\"Monthly\\\",\\\"paymentMethod\\\":null,\\\"comments\\\":\\\"Your **DUMMY_V2_NOTIFICATION** Comment\\\",\\\"orderType\\\":\\\"Pos\\\",\\\"currencyCode\\\":\\\"EUR\\\",\\\"solution\\\":{\\\"solutionName\\\":\\\"ICB PoS Order - **DUMMY_V2_NOTIFICATION**\\\",\\\"products\\\":[{\\\"skuNum\\\":\\\"119-BBFW\\\",\\\"id\\\":null,\\\"description\\\":\\\"DTCP M-100 All Flash-E1 NO NCLSTR VCF-ENT Sub 3 Year, 36 Months\\\",\\\"quantity\\\":2,\\\"price\\\":{\\\"listPrice\\\":1000.0,\\\"yourPrice\\\":1000.0,\\\"totalPrice\\\":2000.0}},{\\\"skuNum\\\":\\\"119-BCLR\\\",\\\"id\\\":null,\\\"description\\\":\\\"DTCP VM-100 All Flash-E1 NO NCLSTR VCF-ENT Sub 3 Year, 36 Months\\\",\\\"quantity\\\":2,\\\"price\\\":{\\\"listPrice\\\":2000.0,\\\"yourPrice\\\":2000.0,\\\"totalPrice\\\":4000.0}},{\\\"skuNum\\\":\\\"119-BBSX\\\",\\\"id\\\":null,\\\"description\\\":\\\"DTCP C-100 All Flash-E1 NO NCLSTR VCF-ENT Sub 3 Year, 36 Months\\\",\\\"quantity\\\":2,\\\"price\\\":{\\\"listPrice\\\":3000.0,\\\"yourPrice\\\":3000.0,\\\"totalPrice\\\":6000.0}}],\\\"committedMonthlyTotal\\\":{\\\"monthlySubTotal\\\":12000.0},\\\"committedContractValue\\\":{\\\"contractSubTotal\\\":432000.0,\\\"contractTax\\\":68000.0,\\\"contractTotal\\\":500000.0}}}\",\r\n" + 
+				"    \"shortDescription\": \"purchase_approved, 123456789\",\r\n" + 
+				"    \"alertActionLink\": \"https://ccp.dell.com\"\r\n" + 
+				"}";
+	}
+	
+	public static String createRejectNotificationV2(String eventtype) {
+		return "{\r\n" + 
+				"    \"ccpEvent\": \""+eventtype+"\",\r\n" + 
+				"    \"payload\": \"{\\\"requesterName\\\":\\\"Vamsee Requester Notification(v2)\\\",\\r\\n\\\"viewOrderLink\\\":\\\"https:\\/\\/dellcloud.vslabs.cloud\\/#\\/subscriptions\\/details\\/add-capacity\\/site-details\\/review-order\\/**DUMMY_V2_NOTIFICATION**\\\",\\\"approverName\\\":\\\"Vamsee Approver Notification(v2)\\\",\\\"requisitionNumber\\\":\\\"4444\\\",\\\"createdDate\\\":\\\"2021-01-01T12:00:01.595Z\\\",\\\"approvedDate\\\":\\\"2021-01-01T12:00:01.595Z\\\",\\\"rejectedDate\\\":\\\"2021-01-01T12:00:01.595Z\\\",\\\"status\\\":\\\"PendingApproval\\\",\\\"totalContractValue\\\":\\\"432000.0\\\",\\\"subscriptionTerm\\\":\\\"36\\\",\\\"billingCadence\\\":\\\"Monthly\\\",\\\"paymentMethod\\\":null,\\\"comments\\\":\\\"Your **DUMMY_V2_NOTIFICATION** Comment\\\",\\\"orderType\\\":\\\"Pos\\\",\\\"currencyCode\\\":\\\"EUR\\\",\\\"solution\\\":{\\\"solutionName\\\":\\\"ICB PoS Order - **DUMMY_V2_NOTIFICATION**\\\",\\\"products\\\":[{\\\"skuNum\\\":\\\"119-BBFW\\\",\\\"id\\\":null,\\\"description\\\":\\\"DTCP M-100 All Flash-E1 NO NCLSTR VCF-ENT Sub 3 Year, 36 Months\\\",\\\"quantity\\\":2,\\\"price\\\":{\\\"listPrice\\\":1000.0,\\\"yourPrice\\\":1000.0,\\\"totalPrice\\\":2000.0}},{\\\"skuNum\\\":\\\"119-BCLR\\\",\\\"id\\\":null,\\\"description\\\":\\\"DTCP VM-100 All Flash-E1 NO NCLSTR VCF-ENT Sub 3 Year, 36 Months\\\",\\\"quantity\\\":2,\\\"price\\\":{\\\"listPrice\\\":2000.0,\\\"yourPrice\\\":2000.0,\\\"totalPrice\\\":4000.0}},{\\\"skuNum\\\":\\\"119-BBSX\\\",\\\"id\\\":null,\\\"description\\\":\\\"DTCP C-100 All Flash-E1 NO NCLSTR VCF-ENT Sub 3 Year, 36 Months\\\",\\\"quantity\\\":2,\\\"price\\\":{\\\"listPrice\\\":3000.0,\\\"yourPrice\\\":3000.0,\\\"totalPrice\\\":6000.0}}],\\\"committedMonthlyTotal\\\":{\\\"monthlySubTotal\\\":12000.0},\\\"committedContractValue\\\":{\\\"contractSubTotal\\\":432000.0,\\\"contractTax\\\":68000.0,\\\"contractTotal\\\":500000.0}}}\",\r\n" + 
+				"    \"shortDescription\": \"purchase_rejected, 123456789\",\r\n" + 
+				"    \"alertActionLink\": \"https://ccp.dell.com\"\r\n" + 
+				"}";
+	}
+
+}
